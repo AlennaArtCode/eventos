@@ -34,7 +34,7 @@ export default function Home() {
               className="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-yellow-600 via-yellow-400 to-yellow-600 text-black font-bold rounded-md hover:from-yellow-500 hover:to-yellow-300 transition-all duration-300 shadow-[0_0_20px_rgba(234,179,8,0.25)] min-w-[320px]"
             >
               <Heart className="mr-3 h-5 w-5 text-black" />
-              DISEÑAR MI BODA MEMORABLE
+              DISEÑAR MI EVENTO MEMORABLE
             </Link>
             
             {/* Button 2 */}
@@ -43,7 +43,7 @@ export default function Home() {
               className="group inline-flex items-center justify-center px-8 py-4 border border-yellow-500 text-white font-bold rounded-md hover:bg-yellow-500/10 transition-all duration-300 backdrop-blur-sm min-w-[320px]"
             >
               <Sliders className="mr-3 h-5 w-5 text-yellow-500 group-hover:text-yellow-400 transition-colors" />
-              SOLICITAR RIDER TÉCNICO B2B
+              SOLICITAR PRODUCCIÓN TÉCNICA
             </Link>
           </div>
         </div>
