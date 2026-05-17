@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Heart, Sliders, Phone, Mail, MapPin } from "lucide-react";
+import { Heart, Sliders, Phone, Mail, MapPin, ArrowRight } from "lucide-react";
 
 export default function Home() {
   return (
@@ -51,45 +51,63 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Sección Servicios (Glassmorphism Premium) */}
-      <section id="servicios" className="py-24 px-4 bg-[#020617] relative">
+      {/* Sección Servicios (Rediseñada para Lujo B2B/B2C) */}
+      <section id="servicios" className="py-32 px-4 bg-[#020617] relative">
         <div className="max-w-[1200px] mx-auto w-full">
-          <div className="text-center mb-20">
-            <h2 className="text-sm font-semibold text-amber-500 tracking-[0.2em] uppercase mb-3">
+          <div className="text-center mb-24">
+            <h2 className="text-sm font-semibold text-amber-500 tracking-[0.3em] uppercase mb-4">
               Nuestra Especialidad
             </h2>
-            <h3 className="text-3xl md:text-4xl font-bold text-white tracking-wide">
+            <h3 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight">
               QUÉ HACEMOS
             </h3>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Bodas */}
-            <div className="bg-white/[0.02] backdrop-blur-md p-12 rounded-2xl border border-white/5 flex flex-col items-center text-center group hover:bg-white/[0.04] transition-all duration-500">
-              <div className="h-16 w-16 mb-8 rounded-full bg-amber-500/10 flex items-center justify-center border border-amber-500/20 group-hover:scale-110 transition-transform duration-500">
-                <Heart className="h-7 w-7 text-amber-500" />
+            <div className="relative p-12 md:p-14 rounded-[2rem] bg-gradient-to-b from-[#0b1120] to-[#020617] border border-white/5 overflow-hidden group hover:border-amber-500/30 transition-all duration-500">
+              <div className="absolute top-0 right-0 -mt-10 -mr-10 w-48 h-48 bg-amber-500/10 rounded-full blur-3xl group-hover:bg-amber-500/20 transition-all duration-500"></div>
+              
+              <div className="relative z-10 flex flex-col items-start text-left h-full">
+                <div className="mb-10 inline-flex">
+                  <Heart className="h-10 w-10 text-amber-500" strokeWidth={1.5} />
+                </div>
+                
+                <h4 className="text-2xl md:text-3xl font-bold text-white mb-6 tracking-wide group-hover:text-amber-500 transition-colors">
+                  Bodas y Celebraciones
+                </h4>
+                
+                <p className="text-slate-400 text-lg leading-relaxed font-light mb-12 flex-grow">
+                  Diseñamos la atmósfera perfecta para tu día más importante. Nos encargamos de la iluminación arquitectónica, el sonido inmersivo y cada detalle técnico para que tu fiesta sea legendaria.
+                </p>
+                
+                <Link href="/bodas" className="mt-auto inline-flex items-center text-sm font-bold text-white hover:text-amber-500 tracking-widest uppercase transition-colors">
+                  Ver más detalles <ArrowRight className="ml-3 h-5 w-5" />
+                </Link>
               </div>
-              <h4 className="text-xl font-bold text-white mb-5 tracking-wide">BODAS Y CELEBRACIONES</h4>
-              <p className="text-slate-400 text-lg leading-relaxed font-light mb-8">
-                Diseñamos la atmósfera perfecta para tu día más importante. Nos encargamos de la iluminación arquitectónica, el sonido inmersivo y cada detalle técnico para que tu fiesta sea legendaria.
-              </p>
-              <Link href="/bodas" className="mt-auto text-sm font-bold text-amber-500 hover:text-yellow-300 tracking-wider flex items-center transition-colors">
-                VER MÁS DETALLES <Sliders className="ml-2 h-4 w-4" />
-              </Link>
             </div>
 
             {/* Producción Técnica */}
-            <div className="bg-white/[0.02] backdrop-blur-md p-12 rounded-2xl border border-white/5 flex flex-col items-center text-center group hover:bg-white/[0.04] transition-all duration-500">
-              <div className="h-16 w-16 mb-8 rounded-full bg-amber-500/10 flex items-center justify-center border border-amber-500/20 group-hover:scale-110 transition-transform duration-500">
-                <Sliders className="h-7 w-7 text-amber-500" />
+            <div className="relative p-12 md:p-14 rounded-[2rem] bg-gradient-to-b from-[#0b1120] to-[#020617] border border-white/5 overflow-hidden group hover:border-amber-500/30 transition-all duration-500">
+              <div className="absolute top-0 right-0 -mt-10 -mr-10 w-48 h-48 bg-amber-500/10 rounded-full blur-3xl group-hover:bg-amber-500/20 transition-all duration-500"></div>
+              
+              <div className="relative z-10 flex flex-col items-start text-left h-full">
+                <div className="mb-10 inline-flex">
+                  <Sliders className="h-10 w-10 text-amber-500" strokeWidth={1.5} />
+                </div>
+                
+                <h4 className="text-2xl md:text-3xl font-bold text-white mb-6 tracking-wide group-hover:text-amber-500 transition-colors">
+                  Producción B2B
+                </h4>
+                
+                <p className="text-slate-400 text-lg leading-relaxed font-light mb-12 flex-grow">
+                  El aliado estratégico que tu agencia necesita. Equipamiento de última generación, estructuras certificadas y un equipo humano dedicado a garantizar la excelencia operativa de tu evento.
+                </p>
+                
+                <Link href="/agencias" className="mt-auto inline-flex items-center text-sm font-bold text-white hover:text-amber-500 tracking-widest uppercase transition-colors">
+                  Ver más detalles <ArrowRight className="ml-3 h-5 w-5" />
+                </Link>
               </div>
-              <h4 className="text-xl font-bold text-white mb-5 tracking-wide">PRODUCCIÓN B2B</h4>
-              <p className="text-slate-400 text-lg leading-relaxed font-light mb-8">
-                El aliado estratégico que tu agencia necesita. Equipamiento de última generación, estructuras certificadas y un equipo humano dedicado a garantizar la excelencia operativa de tu evento.
-              </p>
-              <Link href="/agencias" className="mt-auto text-sm font-bold text-amber-500 hover:text-yellow-300 tracking-wider flex items-center transition-colors">
-                VER MÁS DETALLES <Sliders className="ml-2 h-4 w-4" />
-              </Link>
             </div>
           </div>
         </div>
