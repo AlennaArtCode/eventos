@@ -13,26 +13,26 @@ export default function Navbar() {
         <div className="flex justify-between h-20 items-center">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <Link href="/" className="text-2xl font-bold tracking-widest bg-gradient-to-r from-amber-500 via-yellow-300 to-amber-500 bg-clip-text text-transparent drop-shadow-sm">
+            <Link href="/" className="text-2xl font-bold tracking-widest bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] to-[#B38728] bg-clip-text text-transparent">
               EVENTOS PREMIER
             </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8 items-center">
-            <Link href="/" className="text-sm font-medium text-slate-300 hover:text-white transition-colors duration-300">
+            <Link href="/" className="text-sm font-medium text-slate-300 hover:text-[#D4AF37] transition-colors duration-300">
               Inicio
             </Link>
-            <Link href="#servicios" className="text-sm font-medium text-slate-300 hover:text-white transition-colors duration-300">
+            <Link href="#servicios" className="text-sm font-medium text-slate-300 hover:text-[#D4AF37] transition-colors duration-300">
               Servicios
             </Link>
-            <Link href="/bodas" className="text-sm font-medium text-slate-300 hover:text-white transition-colors duration-300">
+            <Link href="/bodas" className="text-sm font-medium text-slate-300 hover:text-[#D4AF37] transition-colors duration-300">
               Bodas
             </Link>
-            <Link href="#contacto" className="text-sm font-medium text-slate-300 hover:text-white transition-colors duration-300">
+            <Link href="#contacto" className="text-sm font-medium text-slate-300 hover:text-[#D4AF37] transition-colors duration-300">
               Contacto
             </Link>
-            <button className="inline-flex items-center px-7 py-2.5 text-sm font-bold rounded-full text-black bg-gradient-to-r from-amber-500 to-yellow-400 hover:opacity-90 transform hover:-translate-y-0.5 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-amber-500 shadow-lg shadow-amber-500/10">
+            <button className="inline-flex items-center px-7 py-2.5 text-sm font-bold rounded-full text-slate-950 bg-gradient-to-r from-[#D4AF37] to-[#AA771C] hover:opacity-90 transform hover:-translate-y-0.5 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-[#D4AF37]">
               ¡CREAR MI MOMENTO!
             </button>
           </div>
@@ -56,34 +56,34 @@ export default function Navbar() {
           <div className="px-4 pt-4 pb-6 space-y-2">
             <Link
               href="/"
-              className="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-colors"
+              className="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-[#D4AF37] hover:bg-white/5 transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Inicio
             </Link>
             <Link
               href="#servicios"
-              className="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-colors"
+              className="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-[#D4AF37] hover:bg-white/5 transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Servicios
             </Link>
             <Link
               href="/bodas"
-              className="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-colors"
+              className="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-[#D4AF37] hover:bg-white/5 transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Bodas
             </Link>
             <Link
               href="#contacto"
-              className="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-colors"
+              className="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-[#D4AF37] hover:bg-white/5 transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Contacto
             </Link>
             <div className="pt-4">
-              <button className="w-full inline-flex items-center justify-center px-6 py-3 text-base font-bold rounded-full text-black bg-gradient-to-r from-amber-500 to-yellow-400 hover:opacity-90 transition-opacity shadow-lg shadow-amber-500/10">
+              <button className="w-full inline-flex items-center justify-center px-6 py-3 text-base font-bold rounded-full text-slate-950 bg-gradient-to-r from-[#D4AF37] to-[#AA771C] hover:opacity-90 transition-opacity">
                 ¡CREAR MI MOMENTO!
               </button>
             </div>
