@@ -1,15 +1,15 @@
 import Link from "next/link";
-import { Instagram, Facebook, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer className="bg-background border-t border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-columns-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-1 md:col-span-1">
             <Link href="/" className="text-xl font-semibold tracking-tight text-foreground">
-              EVENTOS <span className="text-accent">PREMIUM</span>
+              EVENTOS <span className="text-accent">PREMIER</span>
             </Link>
             <p className="mt-4 text-sm text-muted text-foreground/60">
               Producción y gestión de eventos extraordinarios que superan expectativas.
@@ -32,7 +32,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/agencias" className="text-sm text-foreground/60 hover:text-foreground transition-colors">
-                  Agencias
+                  Agencias B2B
                 </Link>
               </li>
             </ul>
@@ -60,26 +60,23 @@ export default function Footer() {
           {/* Social */}
           <div>
             <h3 className="text-sm font-semibold text-foreground tracking-wider uppercase">Síguenos</h3>
-            <div className="mt-4 flex space-x-4">
-              <a href="#" className="text-foreground/60 hover:text-accent transition-colors">
-                <span className="sr-only">Instagram</span>
-                <Instagram className="h-5 w-5" />
+            <div className="mt-4 flex flex-col space-y-2">
+              <a href="#" className="text-sm text-foreground/60 hover:text-foreground transition-colors">
+                Instagram
               </a>
-              <a href="#" className="text-foreground/60 hover:text-accent transition-colors">
-                <span className="sr-only">Facebook</span>
-                <Facebook className="h-5 w-5" />
+              <a href="#" className="text-sm text-foreground/60 hover:text-foreground transition-colors">
+                Facebook
               </a>
-              <a href="#" className="text-foreground/60 hover:text-accent transition-colors">
-                <span className="sr-only">LinkedIn</span>
-                <Linkedin className="h-5 w-5" />
+              <a href="#" className="text-sm text-foreground/60 hover:text-foreground transition-colors">
+                LinkedIn
               </a>
-            </ul>
+            </div>
           </div>
         </div>
         
         <div className="mt-12 border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-xs text-foreground/40">
-            &copy; {new Date().getFullYear()} Eventos Premium. Todos los derechos reservados.
+            &copy; {new Date().getFullYear()} Eventos Premier. Todos los derechos reservados.
           </p>
           <div className="mt-4 md:mt-0 flex space-x-6">
             <a href="#" className="text-xs text-foreground/40 hover:text-foreground">
