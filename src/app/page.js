@@ -30,7 +30,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-6 w-full justify-center items-center">
             {/* Button 1 */}
             <Link
-              href="#bodas"
+              href="/bodas"
               className="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-yellow-600 via-yellow-400 to-yellow-600 text-black font-bold rounded-md hover:from-yellow-500 hover:to-yellow-300 transition-all duration-300 shadow-[0_0_20px_rgba(234,179,8,0.25)] min-w-[320px]"
             >
               <Heart className="mr-3 h-5 w-5 text-black" />
@@ -39,47 +39,13 @@ export default function Home() {
             
             {/* Button 2 */}
             <Link
-              href="#agencias"
+              href="/agencias"
               className="group inline-flex items-center justify-center px-8 py-4 border border-yellow-500 text-white font-bold rounded-md hover:bg-yellow-500/10 transition-all duration-300 backdrop-blur-sm min-w-[320px]"
             >
               <Sliders className="mr-3 h-5 w-5 text-yellow-500 group-hover:text-yellow-400 transition-colors" />
               SOLICITAR RIDER TÉCNICO B2B
             </Link>
           </div>
-        </div>
-      </section>
-
-      {/* Sección Portafolio */}
-      <section id="portafolio" className="w-full pt-16 pb-8 bg-[#020617]">
-        <div className="text-center mb-10 px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-white tracking-widest uppercase">
-            NUESTROS MOMENTOS MÁS DESTACADOS
-          </h2>
-          <div className="w-24 h-1 bg-yellow-500 mx-auto mt-4 rounded-full"></div>
-        </div>
-
-        {/* Galería continua sin espacios (Full Width) */}
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-0">
-          {[
-            { img: '/portfolio_wedding.png', title: 'La Boda de Carlos & Elena' },
-            { img: '/portfolio_concert.png', title: 'Gala Benéfica Tech' },
-            { img: '/hero_bg.png', title: 'Concierto en la Ciudad' },
-            { img: '/portfolio_wedding.png', title: 'Boda en la Playa' },
-            { img: '/portfolio_concert.png', title: 'Lanzamiento de Marca' },
-            { img: '/hero_bg.png', title: 'Gala de Aniversario' }
-          ].map((item, i) => (
-            <div key={i} className="group relative aspect-[4/3] lg:aspect-auto lg:h-64 overflow-hidden bg-slate-900 border-r border-b border-[#0f172a] last:border-r-0">
-              <img 
-                src={item.img} 
-                alt={item.title} 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" 
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-90"></div>
-              <div className="absolute bottom-0 left-0 right-0 p-4">
-                <h3 className="text-sm md:text-base font-bold text-white line-clamp-2">{item.title}</h3>
-              </div>
-            </div>
-          ))}
         </div>
       </section>
 
@@ -104,6 +70,9 @@ export default function Home() {
               <p className="text-slate-400 text-lg leading-relaxed">
                 Diseñamos la atmósfera perfecta para tu día más importante. Nos encargamos de la iluminación arquitectónica, el sonido inmersivo y cada detalle técnico para que tu fiesta sea legendaria.
               </p>
+              <Link href="/bodas" className="mt-6 text-sm font-bold text-yellow-500 hover:text-yellow-400 flex items-center">
+                Ver más detalles <Sliders className="ml-2 h-4 w-4" />
+              </Link>
             </div>
 
             {/* Producción Técnica */}
@@ -114,6 +83,9 @@ export default function Home() {
               <p className="text-slate-400 text-lg leading-relaxed">
                 El aliado estratégico que tu agencia necesita. Rider técnico de última generación, estructuras certificadas y un equipo humano dedicado a garantizar el éxito de tu evento B2B.
               </p>
+              <Link href="/agencias" className="mt-6 text-sm font-bold text-yellow-500 hover:text-yellow-400 flex items-center">
+                Ver más detalles <Sliders className="ml-2 h-4 w-4" />
+              </Link>
             </div>
           </div>
         </div>
@@ -151,7 +123,6 @@ export default function Home() {
 
             {/* Mapa Derecha */}
             <div className="relative w-full h-80 rounded-xl overflow-hidden border border-slate-800 group bg-slate-900 flex items-center justify-center">
-              {/* Usamos el hero_bg como placeholder sutil de fondo para el mapa */}
               <div 
                 className="absolute inset-0 opacity-20 bg-cover bg-center grayscale"
                 style={{ backgroundImage: "url('/hero_bg.png')" }}
