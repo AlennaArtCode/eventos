@@ -3,7 +3,7 @@ import { Heart, Sliders, Phone, Mail, MapPin, ArrowRight } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="flex-1 flex flex-col bg-[#020617] text-slate-200 font-sans overflow-x-hidden selection:bg-[#D4AF37]/30">
+    <div className="flex-1 flex flex-col bg-black text-slate-200 font-sans overflow-x-hidden selection:bg-[#D4AF37]/30">
       
       {/* Hero Section */}
       <section className="relative min-h-screen flex flex-col items-center justify-center text-center">
@@ -15,7 +15,7 @@ export default function Home() {
         
         {/* Dark Overlays for text readability */}
         <div className="absolute inset-0 bg-black/60"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-[#020617]/80 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
 
         <div className="relative z-10 w-full max-w-[1200px] mx-auto px-4 flex flex-col items-center pt-24 pb-10">
           <span className="text-sm font-medium uppercase tracking-[0.3em] text-[#D4AF37] mb-6">
@@ -42,7 +42,7 @@ export default function Home() {
             {/* Button 2 */}
             <Link
               href="/agencias"
-              className="group inline-flex items-center justify-center px-10 py-4 border border-white/20 bg-white/5 backdrop-blur-sm text-white font-bold rounded-full hover:bg-white/10 hover:border-[#D4AF37]/50 transform hover:-translate-y-0.5 transition-all duration-300 min-w-[320px]"
+              className="group inline-flex items-center justify-center px-10 py-4 border border-white/20 bg-black/50 backdrop-blur-sm text-white font-bold rounded-full hover:bg-white/10 hover:border-[#D4AF37]/50 transform hover:-translate-y-0.5 transition-all duration-300 min-w-[320px]"
             >
               <Sliders className="mr-3 h-5 w-5 text-[#D4AF37] group-hover:text-[#F3E5AB] transition-colors" />
               SOLICITAR PRODUCCIÓN TÉCNICA
@@ -52,7 +52,7 @@ export default function Home() {
       </section>
 
       {/* Sección Servicios (Rediseñada para Lujo B2B/B2C) */}
-      <section id="servicios" className="py-32 px-4 bg-[#020617] relative">
+      <section id="servicios" className="py-32 px-4 bg-black relative">
         <div className="max-w-[1200px] mx-auto w-full">
           <div className="text-center mb-24">
             <h2 className="text-sm font-semibold text-[#D4AF37] tracking-[0.3em] uppercase mb-4">
@@ -65,7 +65,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Bodas */}
-            <div className="relative p-12 md:p-14 rounded-[2rem] bg-gradient-to-b from-[#0b1120] to-[#020617] border border-white/5 overflow-hidden group hover:border-[#D4AF37]/30 transition-all duration-500">
+            <div className="relative p-12 md:p-14 rounded-[2rem] bg-gradient-to-b from-white/[0.03] to-transparent border border-white/5 overflow-hidden group hover:border-[#D4AF37]/30 transition-all duration-500">
               <div className="absolute top-0 right-0 -mt-10 -mr-10 w-48 h-48 bg-[#D4AF37]/10 rounded-full blur-3xl group-hover:bg-[#D4AF37]/20 transition-all duration-500"></div>
               
               <div className="relative z-10 flex flex-col items-start text-left h-full">
@@ -88,7 +88,7 @@ export default function Home() {
             </div>
 
             {/* Producción Técnica */}
-            <div className="relative p-12 md:p-14 rounded-[2rem] bg-gradient-to-b from-[#0b1120] to-[#020617] border border-white/5 overflow-hidden group hover:border-[#D4AF37]/30 transition-all duration-500">
+            <div className="relative p-12 md:p-14 rounded-[2rem] bg-gradient-to-b from-white/[0.03] to-transparent border border-white/5 overflow-hidden group hover:border-[#D4AF37]/30 transition-all duration-500">
               <div className="absolute top-0 right-0 -mt-10 -mr-10 w-48 h-48 bg-[#D4AF37]/10 rounded-full blur-3xl group-hover:bg-[#D4AF37]/20 transition-all duration-500"></div>
               
               <div className="relative z-10 flex flex-col items-start text-left h-full">
@@ -114,7 +114,7 @@ export default function Home() {
       </section>
 
       {/* Footer Integrado */}
-      <footer id="contacto" className="bg-[#020617] border-t border-white/5 pt-20 pb-10 px-4 relative overflow-hidden">
+      <footer id="contacto" className="bg-black border-t border-white/5 pt-20 pb-10 px-4 relative overflow-hidden">
         <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#D4AF37]/20 to-transparent"></div>
         
         <div className="max-w-[1200px] mx-auto w-full relative z-10">
